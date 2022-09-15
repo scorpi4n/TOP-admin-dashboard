@@ -69,8 +69,12 @@ select {
 /* variables */
 
 :root {
-  --light-blue: #1992d4;
-  --light-grey: #e2e8f0;
+  --neutral-50: white;
+  --neutral-100: #e2e8f0;
+  --neutral-900: black;
+
+  --blue-400: #1992d4;
+  --yellow-400: #fbbf24;
 }
 
 /* custom styling */
@@ -81,4 +85,32 @@ select {
 
 .flex {
   display: flex;
+}
+
+body {
+  background-color: var(--neutral-100);
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.sidebar {
+  background-color: var(--blue-400);
+  padding: 1rem;
+  grid-row: span 2;
+  align-content: start;
+  gap: 2rem;
+}
+
+.sidebar h1 {
+  color: var(--neutral-50);
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: var(--neutral-50);
+}
+
+.sidebar>div {
+  grid-template-columns: 1fr;
+  gap: .5rem;
 }
