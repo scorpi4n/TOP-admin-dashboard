@@ -90,7 +90,6 @@ select {
 body {
 	background-color: var(--neutral-100);
 	grid-template-columns: 1fr 5fr;
-	grid-template-rows: repeat(2, 1fr);
 }
 
 .sidebar {
@@ -113,4 +112,41 @@ body {
 .sidebar>div {
 	grid-template-columns: 1fr;
 	gap: .5rem;
+}
+
+header {
+	background-color: var(--neutral-50);
+	padding: 1rem 2rem;
+	padding-right: 4rem;
+	grid-template-columns: 2fr 1fr;
+	gap: 2rem;
+}
+
+.search-bar {
+	align-items: center;
+	gap: 1rem;
+}
+
+.search-bar img {
+	height: 26px;
+}
+
+#search {
+	border: none;
+	border-radius: 1rem;
+	background-color: var(--neutral-100);
+	padding-left: 1ch;
+	flex-grow: 1;
+}
+
+.profile {
+	align-items: center;
+	justify-content: end;
+	gap: 1.5rem;
+}
+
+.notifications {
+	border: none;
+	background: none;
+	height: 26px;
 }
