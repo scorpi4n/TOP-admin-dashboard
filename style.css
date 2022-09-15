@@ -89,6 +89,7 @@ select {
 
 body {
 	background-color: var(--neutral-100);
+	font-weight: bold;
 	grid-template-columns: 1fr 5fr;
 }
 
@@ -116,8 +117,7 @@ body {
 
 header {
 	background-color: var(--neutral-50);
-	padding: 1rem 2rem;
-	padding-right: 4rem;
+	padding: 1rem 4rem 2rem 2rem;
 	grid-template-columns: 2fr 1fr;
 	gap: 2rem;
 }
@@ -149,4 +149,42 @@ header {
 	border: none;
 	background: none;
 	height: 26px;
+}
+
+.welcome {
+	align-items: end;
+	gap: 1rem;
+}
+
+.welcome img {
+	height: 48px;
+}
+
+.welcome h2 {
+	font-size: 1.2rem;
+	position: relative;
+}
+
+.welcome h2::before {
+	content: 'Hi there,';
+	font-size: .75rem;
+	position: absolute;
+	bottom: 1.75rem;
+}
+
+.buttons {
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 2rem;
+	row-gap: .25rem;
+	flex-wrap: wrap;
+}
+
+.buttons button {
+	border: none;
+	background-color: var(--blue-400);
+	color: var(--neutral-50);
+	padding: .5rem 2rem;
+	border-radius: 3rem;
+	flex-grow: 1;
 }
