@@ -3,7 +3,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body,
@@ -16,101 +16,101 @@ figure,
 blockquote,
 dl,
 dd {
-  margin: 0;
+	margin: 0;
 }
 
 ul[role='list'],
 ol[role='list'] {
-  list-style: none;
+	list-style: none;
 }
 
 html:focus-within {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  min-height: 100vh;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
 }
 
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+	text-decoration-skip-ink: auto;
 }
 
 img,
 picture {
-  max-width: 100%;
-  display: block;
+	max-width: 100%;
+	display: block;
 }
 
 input,
 button,
 textarea,
 select {
-  font: inherit;
+	font: inherit;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
+	html:focus-within {
+		scroll-behavior: auto;
+	}
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
 }
 
 /* variables */
 
 :root {
-  --neutral-50: white;
-  --neutral-100: #e2e8f0;
-  --neutral-900: black;
+	--neutral-50: white;
+	--neutral-100: #e2e8f0;
+	--neutral-900: black;
 
-  --blue-400: #1992d4;
-  --yellow-400: #fbbf24;
+	--blue-400: #1992d4;
+	--yellow-400: #fbbf24;
 }
 
 /* custom styling */
 
 .grid {
-  display: grid;
+	display: grid;
 }
 
 .flex {
-  display: flex;
+	display: flex;
 }
 
 body {
-  background-color: var(--neutral-100);
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: repeat(2, 1fr);
+	background-color: var(--neutral-100);
+	grid-template-columns: 1fr 5fr;
+	grid-template-rows: repeat(2, 1fr);
 }
 
 .sidebar {
-  background-color: var(--blue-400);
-  padding: 1rem;
-  grid-row: span 2;
-  align-content: start;
-  gap: 2rem;
+	background-color: var(--blue-400);
+	padding: 1rem;
+	grid-row: span 2;
+	align-content: start;
+	gap: 2rem;
 }
 
 .sidebar h1 {
-  color: var(--neutral-50);
+	color: var(--neutral-50);
 }
 
 .sidebar a {
-  text-decoration: none;
-  color: var(--neutral-50);
+	text-decoration: none;
+	color: var(--neutral-50);
 }
 
 .sidebar>div {
-  grid-template-columns: 1fr;
-  gap: .5rem;
+	grid-template-columns: 1fr;
+	gap: .5rem;
 }
