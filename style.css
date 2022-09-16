@@ -71,6 +71,7 @@ select {
 :root {
 	--neutral-50: white;
 	--neutral-100: #e2e8f0;
+	--neutral-200: #aaaaaa;
 	--neutral-500: #636363;
 	--neutral-900: black;
 
@@ -119,6 +120,7 @@ body {
 header {
 	background-color: var(--neutral-50);
 	padding: 1rem 4rem 2rem 2rem;
+	box-shadow: 0 0 8px var(--neutral-200);
 	grid-template-columns: 2fr 1fr;
 	gap: 2rem;
 }
