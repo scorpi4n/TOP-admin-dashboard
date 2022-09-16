@@ -261,3 +261,32 @@ main h2 {
 	border-bottom: 2px solid var(--neutral-100);
 	padding-bottom: 1rem;
 }
+
+.trending {
+	background-color: var(--neutral-50);
+	border-radius: 1rem;
+	padding: 1rem;
+	margin-top: 1rem;
+	gap: 1rem;
+	font-weight: 500;
+}
+
+.trending>div {
+	gap: .5rem;
+	align-items: center;
+}
+
+.trending>div>div {
+	flex-direction: column;
+	justify-content: center;
+}
+
+.trending h2 {
+	font-weight: 500;
+	font-size: .75rem;
+}
+
+.trending p {
+	font-size: .75rem;
+	color: var(--neutral-500);
+}
