@@ -191,6 +191,7 @@ header {
 main {
 	padding: 1rem;
 	padding-top: 2rem;
+	grid-template-columns: 4fr 1fr;
 }
 
 main h2 {
