@@ -71,6 +71,7 @@ select {
 :root {
 	--neutral-50: white;
 	--neutral-100: #e2e8f0;
+	--neutral-500: #636363;
 	--neutral-900: black;
 
 	--blue-400: #1992d4;
@@ -183,4 +184,45 @@ header {
 	padding: .5rem 2rem;
 	border-radius: 3rem;
 	flex-grow: 1;
+}
+
+main {
+	padding: 1rem;
+	padding-top: 2rem;
+}
+
+main h2 {
+	font-size: 1.25rem;
+}
+
+.projects {
+	padding-top: 1rem;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.projects h2 {
+	grid-column: span 2;
+}
+
+.projects .card {
+	background-color: var(--neutral-50);
+	border-radius: 1rem;
+	padding: 2rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.projects .card::before {
+	content: '';
+	position: absolute;
+	width: .5rem;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: var(--yellow-400);
+}
+
+.card p {
+	color: var(--neutral-500);
 }
