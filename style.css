@@ -143,6 +143,7 @@ header {
 }
 
 .profile {
+	padding-right: 1rem;
 	align-items: center;
 	justify-content: end;
 	gap: 1.5rem;
