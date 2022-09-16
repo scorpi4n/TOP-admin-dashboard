@@ -192,10 +192,15 @@ main {
 	padding: 1rem;
 	padding-top: 2rem;
 	grid-template-columns: 4fr 1fr;
+	gap: 2rem;
 }
 
 main h2 {
 	font-size: 1.25rem;
+}
+
+.projects-container {
+	grid-row: span 2;
 }
 
 .projects {
@@ -228,4 +233,30 @@ main h2 {
 
 .card p {
 	color: var(--neutral-500);
+	font-weight: 500;
+	line-height: 1rem;
+}
+
+.announcements {
+	background-color: var(--neutral-50);
+	padding: 2rem;
+	border-radius: 1rem;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+}
+
+.announcements h2 {
+	font-size: 1rem;
+}
+
+.announcements p {
+	color: var(--neutral-500);
+	font-size: .75rem;
+	font-weight: 500;
+	line-height: 1rem;
+}
+
+.announcements>div:not(:last-child) {
+	border-bottom: 2px solid var(--neutral-100);
+	padding-bottom: 1rem;
 }
