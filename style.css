@@ -240,6 +240,7 @@ main h2 {
 .announcements {
 	background-color: var(--neutral-50);
 	padding: 2rem;
+	margin-top: 1rem;
 	border-radius: 1rem;
 	grid-template-columns: 1fr;
 	gap: 1rem;
