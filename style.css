@@ -94,6 +94,7 @@ select {
 	border-radius: 1rem;
 	box-shadow: 0 8px 8px -8px var(--neutral-500);
 	padding: 2rem;
+	margin-top: 1rem;
 	flex-direction: column;
 }
 
@@ -213,7 +214,7 @@ main h2 {
 }
 
 .projects {
-	padding-top: 1rem;
+	margin-top: 1rem;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
 }
@@ -223,6 +224,7 @@ main h2 {
 }
 
 .projects .card {
+	margin-top: 0;
 	position: relative;
 	overflow: hidden;
 }
@@ -252,7 +254,6 @@ main h2 {
 }
 
 .announcements {
-	margin-top: 1rem;
 	gap: 1rem;
 }
 
@@ -274,7 +275,6 @@ main h2 {
 
 .trending {
 	padding: 1rem;
-	margin-top: 1rem;
 	gap: 1rem;
 	font-weight: 500
 }
