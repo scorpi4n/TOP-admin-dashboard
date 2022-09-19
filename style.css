@@ -98,6 +98,12 @@ select {
 	flex-direction: column;
 }
 
+.card p {
+	color: var(--neutral-500);
+	font-weight: 500;
+	line-height: 1rem;
+}
+
 body {
 	background-color: var(--neutral-100);
 	font-weight: bold;
@@ -239,12 +245,6 @@ main h2 {
 	background-color: var(--yellow-400);
 }
 
-.card p {
-	color: var(--neutral-500);
-	font-weight: 500;
-	line-height: 1rem;
-}
-
 .projects .card>div {
 	padding-top: 2rem;
 	justify-content: end;
@@ -262,10 +262,7 @@ main h2 {
 }
 
 .announcements p {
-	color: var(--neutral-500);
 	font-size: .75rem;
-	font-weight: 500;
-	line-height: 1rem;
 }
 
 .announcements>div:not(:last-child) {
@@ -276,7 +273,7 @@ main h2 {
 .trending {
 	padding: 1rem;
 	gap: 1rem;
-	font-weight: 500
+	font-weight: 500;
 }
 
 .trending>div {
@@ -289,12 +286,7 @@ main h2 {
 	justify-content: center;
 }
 
-.trending h2 {
-	font-weight: 500;
-	font-size: .75rem;
-}
-
+.trending h2,
 .trending p {
 	font-size: .75rem;
-	color: var(--neutral-500);
 }
